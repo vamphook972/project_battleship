@@ -1,26 +1,33 @@
-*Battleship*
-The board game “Battleship” consists of 2 players in a duel of luck and strategy. 
-and strategy, where we have to position our fleet of ships on a board marked by squares, where each ship occupies at least 1 square. 
-marked by squares, where each ship occupies a minimum of 1 square. 
-player has to announce where he is going to make his attack, while the other player has to 
-the other player has to tell him if he hit any of the enemy troops or not. 
-the winner will be the one who manages to keep his ships afloat until the end.
-Now, our main task is to be able to make a fully playable version of the game, but executed 
-but executed from the Python programming language, where before getting down to work we have to take into account the challenges of 
-before getting down to work, we must take into account the challenges of making this “Pythonian” copy.
-First of all, the most important element of the game, the board. We need to build 
-the board for the user and for the machine, which should be a 5x5 matrix, where the first thing to do is to ask the user for the coordinates 
-is to ask the user for the coordinates, since our goal is to generate the coordinates of the machine randomly. 
-randomly.
-Having already completed the first objective, which are the boards, the next goal for us is to be able to show the user the coordinates of the machine in a random way. 
-the next goal for us is to be able to show the user, and in turn, to ask him which coordinates he wants to attack in his 
-the respective turn, representing in a visual way, if he missed or if he succeeded in the attack, as well as to show which parts of his 
-the attack, as well as showing which parts of the board were attacked.
-Continuing with the attacks, we need to instruct the machine how to attack in a random way, so that after 
-randomly, so that after each user's turn, it proceeds with its turn attacking any part of the player's board, until it 
-any part of the player's board, until one of the 2 loses.
-Finally, as a last objective, we require that when the 3 ships of one of the 2 players are destroyed, we require that when the 3 ships of one of the 2 players are 
-3 ships of any of the 2 players, it is visually shown, the victory or defeat that the user suffers, showing some 
-the user suffers, showing some graphic that deserves it.
+# Battleship
 
-Translated with DeepL.com (free version)
+## Overview
+Battleship is a classic board game of strategy and luck, where two players engage in a duel to outmaneuver each other by sinking the opponent's fleet. This project is a Python-based implementation of the game, designed to be fully playable from the command line.
+
+## Gameplay
+The game consists of two 5x5 boards—one for the player and one for the machine. Each player positions their fleet of ships on their board, with each ship occupying at least one square. Players take turns announcing the coordinates of their attacks, aiming to hit the opponent's ships. The game continues until one player's fleet is entirely destroyed.
+
+## Features
+- **Board Setup:** Players manually position their ships, while the machine randomly places its fleet on a 5x5 grid.
+- **Turn-Based Play:** Players input the coordinates of their attacks, and the game visually indicates whether the attack was a hit or a miss.
+- **AI Opponent:** The machine randomly selects coordinates to attack on the player’s board after each turn.
+- **Victory/Defeat Visuals:** The game provides visual feedback when all three ships of a player are destroyed, declaring a winner or loser.
+
+## Objectives
+1. **Board Construction:** Build a 5x5 grid for both the user and the machine. The user manually places their ships, while the machine’s ships are placed randomly.
+2. **User Interface:** Display the player’s and machine’s boards, allowing the player to choose attack coordinates each turn. The game visually shows hits, misses, and attacked areas.
+3. **AI Logic:** Implement a simple AI that randomly selects coordinates to attack on the player’s board after each player’s turn.
+4. **Endgame Display:** Visually represent the victory or defeat when one player's fleet is entirely destroyed.
+
+## Getting Started
+To play the game, simply clone this repository and run the main Python script. Ensure you have Python 3.x installed on your machine.
+
+`git clone https://github.com/yourusername/battleship.git`
+`cd battleship`
+`python3 battleship.py`
+
+
+## Contributing
+Feel free to fork this repository and submit pull requests with improvements, bug fixes, or new features. Contributions are welcome!
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
