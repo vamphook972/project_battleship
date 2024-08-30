@@ -21,9 +21,11 @@ The game consists of two 5x5 boards—one for the player and one for the machine
 ## Getting Started
 To play the game, simply clone this repository and run the main Python script. Ensure you have Python 3.x installed on your machine.
 
-`git clone https://github.com/yourusername/battleship.git`
-`cd battleship`
-`python3 battleship.py`
+```bash 
+git clone https://github.com/yourusername/battleship.git
+cd battleship
+python3 battleship.py
+```
 
 
 ## Contributing
