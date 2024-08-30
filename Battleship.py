@@ -131,9 +131,8 @@ def pedir_cordenadas():
         elif letras == "" or " " in letras:
             print("❗𝐍𝐎 𝐇𝐀𝐒 𝐈𝐍𝐆𝐑𝐄𝐒𝐀𝐃𝐎 𝐂𝐎𝐎𝐑𝐃𝐄𝐍𝐀𝐃𝐀𝐒 ❗")
 
-        elif (
-            letras != condicion_x or letras != condicion_y
-        ):  # si no se ingresa una cordenada, se le avisa al usuario y se vuevle a pedir
+        else:
+            # si no se ingresa una cordenada, se le avisa al usuario y se vuevle a pedir
             print(
                 "❗𝐈𝐍𝐆𝐑𝐄𝐒𝐀𝐒𝐓𝐄 𝐔𝐍 𝐂𝐀𝐑𝐀𝐂𝐓𝐄𝐑 𝐈𝐍𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐎. ¡𝐈𝐍𝐆𝐑𝐄𝐒𝐀 𝐔𝐍𝐀 𝐂𝐎𝐎𝐑𝐃𝐄𝐍𝐀𝐃𝐀 𝐂𝐎𝐑𝐑𝐄𝐂𝐓𝐀! ❗:"
             )
@@ -410,4 +409,3 @@ def volver_a_empezar():
 
 battelship()
 volver_a_empezar()  # Ejecutamos tanto la funcion battelship como la funcion volver_a_empezar para que se ejecute el juego
-
